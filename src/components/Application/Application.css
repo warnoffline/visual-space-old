@@ -1,0 +1,245 @@
+.main__application{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: white;
+}
+.application__parts{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.application__head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.application__head h2{
+    font-size: 64px;
+    padding: 0px;
+    color: #181818;    
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.application__head h3{
+    font-size: 32px;
+    padding: 0px;
+    color: #181818;    
+    font-family: 'Manrope';
+    font-weight: 400;
+}
+.application_foot{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.application__inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.application__input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.application__textarea{
+    width: 50%;
+    font-size: 24px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    resize: none;
+    padding: 20px;
+    background-color: #E1E1E1;
+    border: 0px;
+    border-radius: 16px;
+    outline-color: #B4B4B4;
+}
+.application__textarea::placeholder{
+    color: #B4B4B4;
+}
+.application__inputs__left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.application__inputs__left input{
+    font-size: 24px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    padding: 20px;
+    background-color: #E1E1E1;
+    border: 0px;
+    border-radius: 16px;
+    outline-color: #B4B4B4;
+}
+.application__inputs__left input::placeholder{
+    color: #B4B4B4;
+}
+.application__foot_up{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.application__button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.app__button__done{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Manrope";
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px 35px;
+    background-color: #287338;
+    border-radius: 16px;
+    border: 2px solid #287338;
+    cursor: pointer;
+    transition: 0.3s;
+    gap: 10px;
+    color: #E6E6E6;
+}
+.app__button__done:hover{
+    color: #287338;
+    background-color: white;
+    transition: 0.3s;
+}
+.app__button__done:hover .done__img{
+    background-image: url('../../../public/img/DoneGreen.svg');
+    transition: 0.3s;
+}
+.done__img{
+    width: 35px;
+    height: 35px;
+    background-image: url('../../../public/img/Done.svg');
+}
+.app__button__submit{
+    font-family: "Manrope";
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px 35px;
+    color: #E6E6E6;
+    background-color: #202020;
+    border-radius: 16px;
+    border: 2px solid #202020;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.app__button__submit:hover{
+    background-color: white;
+    color: #202020;
+    transition: 0.3s;
+}
+.application__button p{
+    color: #505050;
+    font-family: "Manrope";
+    font-size: 20px;
+    width: 75%;
+}
+.application__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.application_contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.application_contacts span{
+    font-size: 24px;
+    font-family: 'Manrope';
+    color: #505050;
+}
+.application_contacts span strong{
+    color: #181818;
+}
+.application__social__media{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.application__social__media p{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Manrope';
+    color: #181818;
+}
+.soc__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    transition: 0.3s;
+}
+.soc__icons a:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.application__input p{
+    color: #D45C5C;
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: 500;
+}
+.error__mess::placeholder{
+    color:#D45C5C !important;
+}
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    .application__parts{
+        width: 90%;
+    }
+    .application__head h2{
+        font-size: 40px;
+    }
+    .application__head h3{
+        font-size: 18px;
+    }
+    .application__inputs{
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+    .application__inputs__left{
+        width: 100%;
+    }
+    .application__textarea{
+        width: 100%;
+        font-size: 18px;
+        height: 200px;
+    }
+    .application__input input{
+        font-size: 18px;
+    }
+    .application__button{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .application__button p{
+        width: 100%;
+        font-size: 13px;
+    }
+    .app__button__submit{
+        width: 100%;
+        font-size: 20px;
+    }
+    .application_contacts span{
+        width: 70%;
+        font-size: 18px;
+    }
+    .application__social__media p{
+        font-size: 18px ;
+    }
+    .app__button__done{
+        width: 100%;
+    }
+}

@@ -1,0 +1,94 @@
+.main__footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    padding: 50px 0;
+}
+.footer{
+    width: 70%;
+    display: flex;
+    gap: 80px;
+    
+}
+.footer__column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    width: 20%;
+}
+.footer__column:first-child{
+    justify-content: center;
+}
+.agree{
+    font-size: 12px;
+    font-family: 'Manrope';
+    font-weight: 300;
+    color: #E1E1E1;
+}
+.foot__head__link{
+    color: #E1E1E1;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.foot__head{
+    color: #E1E1E1;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer__column span{
+    color: #C3C3C3;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer__icons{
+    display: flex;
+    gap: 10px;
+}
+.foot__link{
+    color: #C3C3C3;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.foot__head__link:hover{
+    color:#7f7f7f;
+    transition: 0.3s;
+}
+.foot__link:hover{
+    color: #7f7f7f;
+    transition: 0.3s;
+}
+.footer__icons a{
+    transition: 0.3s;
+}
+.footer__icons a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    .footer{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer__column{
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

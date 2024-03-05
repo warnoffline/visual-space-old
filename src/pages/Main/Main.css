@@ -1,0 +1,74 @@
+
+.main__info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: white;
+}
+.main__info__parts{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+}
+.main__info__part__one{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main__info__part__two{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    animation: ani 3s 1;
+}
+.info__part__head h1{
+    margin: 0px;
+    color: #181818;
+    font-family: "Montserrat";
+    font-size: 64px;
+
+}
+.info__part__text__first{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+.info__part__text__first p, .info__part__text__second p{
+    font-family: "Manrope";
+    width: 90%;
+    color: #181818;
+    font-weight: 500;
+    font-size: 32px;
+}
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    .main__info__parts{
+        width: 95%;
+        gap: 50px;
+    }
+    .main__info__part__one{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main__info__part__two{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .info__part__head h1{
+        
+        font-size: 40px;
+    }
+    .info__part__text__first{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .info__part__text__first p{
+        width: 100%;
+        font-size: 26px;
+    }
+    .info__part__text__second p{
+        width: 100%;
+        font-size: 26px;
+    }
+}
