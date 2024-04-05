@@ -2,7 +2,7 @@
 
 Для дальнейших действий, запустите команду в той директории, откуда вы хотите запустить проект
 
-### `git clone https://github.com/warnoffline/visual-space`
+### `git clone https://github.com/warnoffline/visual-space-old`
 
 # Запуск проекта
 
